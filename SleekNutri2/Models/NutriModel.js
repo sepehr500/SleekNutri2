@@ -1,40 +1,6 @@
-﻿export class NutriModel {
-    //1= male, 2=female
-    
-    public age: number;
-    public centimeters: number;
-    public weight: number;
-    public ActivityLevel: number;
-
-    public sex: number;
-
-
-    //Macros
-    public starch: number;
-    public sugar: number;
-    public protien: number;
-    public fat: number;
-    public water: number;
-
-
-    //Vitamins
-    
-    public VA: number;
-    public VC: number;
-    public VE: number;
-    public sodium: number;
-    public fiber: number;
-
-
-    //personal
-    public location: string;
-
-
-
-
-
+"use strict";
+class NutriModel {
     constructor() {
-
         this.sex = 4;
         //this.age = null;
         //this.ActivityLevel = null;
@@ -52,7 +18,7 @@
         //this.VE = null;        
         //this.water= null;        
         //this.weight= null;        
-
-
     }
 }
+exports.NutriModel = NutriModel;
+//# sourceMappingURL=NutriModel.js.map

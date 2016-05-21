@@ -9,16 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = require('@angular/core');
-const NutriForm_component_1 = require('./NutriForm.component');
-let AppComponent = class AppComponent {
+const NutriModel_ts_1 = require('../Models/NutriModel.ts');
+let NutriFromComponent = class NutriFromComponent {
+    constructor() {
+        this.model = new NutriModel_ts_1.NutriModel();
+        console.log(this.model);
+        this.title = this.model.sex;
+    }
+    onSave() {
+        console.log("BoGo");
+        console.log(this.model.sex);
+    }
 };
-AppComponent = __decorate([
+NutriFromComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        directives: [NutriForm_component_1.NutriFromComponent],
-        template: '<NutriForm></NutriForm>'
+        selector: 'NutriForm',
+        templateUrl: 'views/NutriForm.component.html'
     }), 
     __metadata('design:paramtypes', [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], NutriFromComponent);
+exports.NutriFromComponent = NutriFromComponent;
+//# sourceMappingURL=NutriForm.component.js.map

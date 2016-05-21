@@ -1,8 +1,11 @@
 ﻿import { Component } from '@angular/core';
+import {NutriFromComponent} from './NutriForm.component'
 
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    directives: [NutriFromComponent],
+    
+    template:  '<NutriForm></NutriForm>'
 })
-export class AppComponent { }
+export class AppComponent {}
